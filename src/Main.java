@@ -8,7 +8,7 @@ public class Main {
         products.put("Бананочипсы",100);
         products.put("Конфета",30);
         products.put("Вода",25);
-        Account account = new Account(24);
+        Account account = new Account(100);
 
 
         VendingMachine.printInfo(products,account);
