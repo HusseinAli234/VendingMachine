@@ -10,7 +10,7 @@ public class VendingMachine {
     public static void printInfo(Map<String,Integer> products,Account account)
     {
         String action = "";
-        if(account.getCash() < 25)
+        if(account.getCash() < Collections.min(products.values()))
         {
                 printProducts(products);
                 System.out.println("Долларов на счету :" + account.getCash());
