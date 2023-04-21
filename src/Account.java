@@ -30,7 +30,7 @@ public class Account {
         }
         catch (InputMismatchException | IncorrectReplenishmentException e)
             {
-                System.out.println(e.toString());
+                System.out.println("Неккоректный ввод!");
                 scn.next();
                 topUp();
             }
