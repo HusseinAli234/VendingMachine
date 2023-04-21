@@ -26,7 +26,7 @@ public class Account {
                     throw new IncorrectReplenishmentException();
             }
             this.cash +=refill;
-            System.out.printf("Вы пополнили счет на %d долларов",refill);
+            System.out.printf("Вы пополнили счет на %d долларов%n",refill);
         }
         catch (InputMismatchException | IncorrectReplenishmentException e)
             {

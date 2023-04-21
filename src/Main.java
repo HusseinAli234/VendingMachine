@@ -8,9 +8,10 @@ public class Main {
         products.put("Бананочипсы",100);
         products.put("Конфета",30);
         products.put("Вода",25);
+        products.put("Хлеб",30);
+        products.put("Мороженое",10);
+        products.put("Леденец",5);
         Account account = new Account(100);
-
-
         VendingMachine.printInfo(products,account);
 
 

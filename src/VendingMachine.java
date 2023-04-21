@@ -31,9 +31,6 @@ public class VendingMachine {
                         break;
                     case "q":
                             System.exit(0);
-
-
-
                 }
                 action = "";
 
@@ -53,9 +50,9 @@ public class VendingMachine {
                 possibleProduct.put(act++,name);
             }
         }
-
                 while(true) {
                     try {
+                        System.out.print("Выберите:");
                         action = scn.nextLine().toLowerCase();
                         switch (action) {
                             case "a":
@@ -73,6 +70,7 @@ public class VendingMachine {
                         System.out.println("Сделайте корректный ввод!");
                     }
                 }
+                printInfo(products,account);
     }
     public static void printProducts(Map<String,Integer> products)
     {
